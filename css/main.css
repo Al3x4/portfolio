@@ -75,6 +75,19 @@ ul {
 
 /*MAIN BODY STYLES----------------BEGIN*/
 
+.main {
+  min-height: 100%;
+  margin-bottom:-200px;
+}
+
+/* I used this little trick to keep my footer always at the bottom of the page. */
+/* CREDIT: https://css-tricks.com/snippets/css/sticky-footer/ */
+.main:after{
+  content: "";
+  display: block;
+  height: 200px;
+}
+
 .hero {
   border-top: 3px solid #6d7993;
 }
@@ -113,8 +126,7 @@ ul {
   padding:40px;
   background-color: #6d7993;
   color: #ffffff;
-  position: absolute;
-  bottom: 0;
+  height: 200px;
 }
 
 .footer-text {
