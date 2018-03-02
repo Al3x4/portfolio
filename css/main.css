@@ -90,6 +90,13 @@ ul {
 
 .hero {
   border-top: 3px solid #6d7993;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-picture,
+.hero-image {
+  max-width: 100%;
 }
 
 .items-container {
@@ -185,7 +192,8 @@ ul {
 @media screen and (min-width: 450px) {
   .items-container {
     display: flex;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+    justify-content: space-between;   
   }
 
   .item {
@@ -224,6 +232,15 @@ ul {
 
   .item {
     margin: 0 12.5px;
+  }
+
+  .item:first-of-type,
+  .item:nth-of-type(4n) {
+    margin-left: 0;
+  }
+
+  .item:nth-of-type(3n) {
+    margin-right: 0;
   }
 
 }
