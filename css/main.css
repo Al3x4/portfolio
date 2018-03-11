@@ -52,7 +52,7 @@ ul {
 
 .header {
   display: flex;
-  align-portfolio-items: center;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
 }
